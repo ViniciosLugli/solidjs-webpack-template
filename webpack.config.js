@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var WebpackBeforeBuildPlugin = require('before-build-webpack');
+const WebpackBeforeBuildPlugin = require('before-build-webpack');
 const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 const utwm = require('unplugin-tailwindcss-mangle/webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -27,8 +27,8 @@ module.exports = {
 				exclude: /node_moudles/,
 			},
 			{
-				test: /\.css$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+				test: /\.scss$/,
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', , 'sass-loader'],
 			},
 		],
 	},
