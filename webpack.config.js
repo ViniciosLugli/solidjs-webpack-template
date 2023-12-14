@@ -4,6 +4,7 @@ const WebpackBeforeBuildPlugin = require('before-build-webpack');
 const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 const utwm = require('unplugin-tailwindcss-mangle/webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { resolve } = require('path');
 const { exec } = require('child_process');
 
@@ -61,9 +62,11 @@ module.exports = {
 				minimizerOptions: {},
 			}),
 			new CssMinimizerPlugin(),
+			new TerserPlugin(),
 		],
 	},
 	devServer: {
 		port: 8080,
 	},
+	cache: true,
 };
