@@ -5,6 +5,7 @@ const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 const utwm = require('unplugin-tailwindcss-mangle/webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const { resolve } = require('path');
 const { exec } = require('child_process');
 
@@ -48,6 +49,9 @@ module.exports = {
 			template: resolve(__dirname, 'public', 'index.html'),
 			inject: 'body',
 			favicon: resolve(__dirname, 'public', 'favicon.png'),
+		}),
+		new CopyPlugin({
+			patterns: [{ from: 'public/static' }],
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'app.css',
