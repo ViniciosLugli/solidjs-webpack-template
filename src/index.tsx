@@ -1,5 +1,5 @@
 import { render } from 'solid-js/web';
-import './styles/index.scss';
+import '@styles/index.scss';
 
 function HelloWorld() {
 	return (

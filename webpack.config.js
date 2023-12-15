@@ -6,6 +6,8 @@ const utwm = require('unplugin-tailwindcss-mangle/webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 const { resolve } = require('path');
 const { exec } = require('child_process');
 
@@ -20,6 +22,11 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.ts', '.tsx'],
+		plugins: [new TsconfigPathsPlugin({
+			configFile: "./tsconfig.json",
+			logLevel: "info",
+			extensions: [".ts", ".tsx"],
+		})]
 	},
 	module: {
 		rules: [
