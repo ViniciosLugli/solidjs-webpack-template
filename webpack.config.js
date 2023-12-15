@@ -15,7 +15,7 @@ module.exports = {
 		main: resolve(__dirname, 'src', 'index.tsx'),
 	},
 	output: {
-		filename: 'app.js',
+		filename: '[name].[contenthash].js',
 		path: resolve(__dirname, 'dist'),
 	},
 	resolve: {
@@ -75,6 +75,16 @@ module.exports = {
 				},
 			}),
 		],
+		runtimeChunk: 'single',
+		splitChunks: {
+			cacheGroups: {
+			  vendor: {
+				test: /[\\/]node_modules[\\/]/,
+				name: 'vendors',
+				chunks: 'all',
+			  },
+			},
+		  },
 	},
 	devServer: {
 		port: 8080,
