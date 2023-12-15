@@ -66,7 +66,14 @@ module.exports = {
 				minimizerOptions: {},
 			}),
 			new CssMinimizerPlugin(),
-			new TerserPlugin(),
+			new TerserPlugin({
+				terserOptions: {
+					compress: {
+						drop_console: true,
+					},
+					mangle: true,
+				},
+			}),
 		],
 	},
 	devServer: {
