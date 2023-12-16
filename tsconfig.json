@@ -17,7 +17,9 @@
 		"declarationMap": true, // Emit declaration maps for TypeScript files
 		"baseUrl": ".", // Base directory to resolve non-absolute module names
 		"paths": { // Path mapping for modules (useful in larger projects)
-			"@styles/*": ["./src/styles/*"]
+			"@styles/*": ["./src/styles/*"],
+			"@components/*": ["./src/components/*"],
+			"@pages/*": ["./src/pages/*"]
 		},
 		"removeComments": true, // Remove comments in output
 		"importHelpers": true, // Import emit helpers from 'tslib'
