@@ -99,7 +99,7 @@ module.exports = {
 			},
 		  }),
 		new CopyPlugin({
-			patterns: [{ from: 'public/static' }],
+			patterns: [{ from: 'public/static', to: 'static' }],
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'app.css',
@@ -108,6 +108,7 @@ module.exports = {
 	],
 	optimization: {
 		minimize: true,
+		moduleIds: 'deterministic',
 		minimizer: [
 			new HtmlMinimizerPlugin({
 				minify: HtmlMinimizerPlugin.swcMinify,
