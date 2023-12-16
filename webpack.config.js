@@ -7,6 +7,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 const { resolve } = require('path');
 const { exec } = require('child_process');
@@ -33,7 +34,7 @@ module.exports = {
 			{
 				test: /\.tsx?/,
 				use: ['babel-loader'],
-				exclude: /node_moudles/,
+				exclude: /node_modules/,
 			},
 			{
 				test: /\.scss$/,
@@ -43,7 +44,7 @@ module.exports = {
 	},
 	plugins: [
 		new WebpackBeforeBuildPlugin(async function (stats, callback) {
-			exec('yarn prepare', (err, stdout, stderr) => {
+			exec('npm run prepare', (err, stdout, stderr) => {
 				if (err) {
 					console.log(err);
 					return;
@@ -57,6 +58,46 @@ module.exports = {
 			inject: 'body',
 			favicon: resolve(__dirname, 'public', 'favicon.png'),
 		}),
+		new ImageMinimizerPlugin({
+			minimizer: {
+			  implementation: ImageMinimizerPlugin.svgoMinify,
+			  options: {
+				encodeOptions: {
+				  multipass: true,
+				  plugins: [
+					"preset-default",
+				  ],
+				},
+			  },
+			},
+		  }),
+		  new ImageMinimizerPlugin({
+			minimizer: {
+			  implementation: ImageMinimizerPlugin.sharpMinify,
+			  options: {
+				encodeOptions: {
+				  jpeg: {
+					// https://sharp.pixelplumbing.com/api-output#jpeg
+					quality: 100,
+				  },
+				  webp: {
+					// https://sharp.pixelplumbing.com/api-output#webp
+					lossless: true,
+				  },
+				  avif: {
+					// https://sharp.pixelplumbing.com/api-output#avif
+					lossless: true,
+				  },
+
+				  // https://sharp.pixelplumbing.com/api-output#png
+				  png: {},
+
+				  // https://sharp.pixelplumbing.com/api-output#gif
+				  gif: {},
+				},
+			  },
+			},
+		  }),
 		new CopyPlugin({
 			patterns: [{ from: 'public/static' }],
 		}),

@@ -5,9 +5,9 @@ git clone git@github.com:ViniciosLugli/solidjs-webpack-template.git
 ```
 
 ```shell
-yarn
+npm install
 ```
 
 ```shell
-yarn start
+npm run start
 ```
