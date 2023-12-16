@@ -10,7 +10,7 @@
 			]
 		},
 		{
-			"source": "/assets/(.*)",
+			"source": "/static/(.*)",
 			"headers": [
 				{
 					"key": "Cache-Control",
