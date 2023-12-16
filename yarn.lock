@@ -1433,10 +1433,10 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@solidjs/router@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.npmjs.org/@solidjs/router/-/router-0.9.1.tgz"
-  integrity sha512-kRY75piOQsyoH75E/RP6lr7uVGFCjeeCCCJx7Z2D1Vc6+I1yFQjLCvE+6agXGwqDoWi6vbETP1g7gmp/L1mNLg==
+"@solidjs/router@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.10.3.tgz#a72e84ef005c371cc88fc073375c0890edd7a2dd"
+  integrity sha512-UZyUcGbMzeJWCJZthWfveFbv9FyMLi62+BHpXyVwAYpowHaUkkV3WVKoYxYF9m47fVG23UfUo2S6GbuyPAyCjw==
 
 "@swc/html-android-arm-eabi@0.0.28":
   version "0.0.28"
@@ -5219,6 +5219,11 @@ solid-js@^1.8.0:
   dependencies:
     csstype "^3.1.0"
     seroval "^0.15.1"
+
+solid-toast@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/solid-toast/-/solid-toast-0.5.0.tgz#ed31363aad38434a67c1da1c423fd1492460c6ba"
+  integrity sha512-t770JakjyS2P9b8Qa1zMLOD51KYKWXbTAyJePVUoYex5c5FH5S/HtUBUbZAWFcqRCKmAE8KhyIiCvDZA8bOnxQ==
 
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
