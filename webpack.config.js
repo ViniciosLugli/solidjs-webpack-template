@@ -111,7 +111,7 @@ module.exports = {
 		moduleIds: 'deterministic',
 		minimizer: [
 			new HtmlMinimizerPlugin({
-				minify: HtmlMinimizerPlugin.swcMinify,
+				minify: HtmlMinimizerPlugin.htmlMinifierTerser,
 				minimizerOptions: {},
 			}),
 			new CssMinimizerPlugin(),
