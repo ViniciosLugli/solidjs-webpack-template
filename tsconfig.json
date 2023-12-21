@@ -16,7 +16,8 @@
 		"declaration": true, // Generate corresponding .d.ts files for TypeScript files
 		"declarationMap": true, // Emit declaration maps for TypeScript files
 		"baseUrl": ".", // Base directory to resolve non-absolute module names
-		"paths": { // Path mapping for modules (useful in larger projects)
+		"paths": {
+			// Path mapping for modules (useful in larger projects)
 			"@styles/*": ["./src/styles/*"],
 			"@components/*": ["./src/components/*"],
 			"@pages/*": ["./src/pages/*"]
