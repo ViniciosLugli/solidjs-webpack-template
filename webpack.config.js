@@ -117,9 +117,7 @@ module.exports = {
 			new CssMinimizerPlugin(),
 			new TerserPlugin({
 				terserOptions: {
-					compress: {
-						drop_console: true,
-					},
+					compress: true,
 					mangle: true,
 				},
 			}),
