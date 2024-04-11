@@ -3,4 +3,8 @@
   "extends": [
     "config:recommended"
   ]
+  "semanticCommits": true,
+  "prCreation": "not-pending",
+  "labels": ["type: dependencies"]
+  "automerge": true
 }
