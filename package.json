@@ -27,7 +27,7 @@
 		"before-build-webpack": "^0.2.13",
 		"copy-webpack-plugin": "^12.0.0",
 		"css-loader": "^7.0.0",
-		"css-minimizer-webpack-plugin": "^6.0.0",
+		"css-minimizer-webpack-plugin": "^7.0.0",
 		"html-minimizer-webpack-plugin": "^5.0.0",
 		"html-webpack-plugin": "^5.5.3",
 		"image-minimizer-webpack-plugin": "^4.0.0",
