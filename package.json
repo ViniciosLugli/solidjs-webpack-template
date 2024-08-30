@@ -16,7 +16,7 @@
 		"@babel/plugin-transform-object-rest-spread": "^7.23.4",
 		"@babel/preset-env": "^7.23.5",
 		"@babel/preset-typescript": "^7.23.3",
-		"@swc/html": "^0.0.28",
+		"@swc/html": "^1.0.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.7",
