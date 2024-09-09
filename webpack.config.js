@@ -1,16 +1,16 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const WebpackBeforeBuildPlugin = require('before-build-webpack');
-const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
-const utwm = require('unplugin-tailwindcss-mangle/webpack');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WebpackBeforeBuildPlugin = require('before-build-webpack')
+const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin')
+const utwm = require('unplugin-tailwindcss-mangle/webpack')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
-const { resolve } = require('path');
-const { exec } = require('child_process');
+const { resolve } = require('path')
+const { exec } = require('child_process')
 
 module.exports = {
 	mode: 'development',
@@ -48,12 +48,12 @@ module.exports = {
 		new WebpackBeforeBuildPlugin(async function (stats, callback) {
 			exec('npm run prepare', (err, stdout, stderr) => {
 				if (err) {
-					console.log(err);
-					return;
+					console.log(err)
+					return
 				}
-				console.log(stdout);
-			});
-			callback();
+				console.log(stdout)
+			})
+			callback()
 		}),
 		new HtmlWebpackPlugin({
 			template: resolve(__dirname, 'public', 'index.html'),
@@ -137,4 +137,4 @@ module.exports = {
 		port: 8080,
 	},
 	cache: true,
-};
+}
