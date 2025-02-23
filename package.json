@@ -52,7 +52,7 @@
 		"@ark-ui/solid": "3.13.0",
 		"@felte/solid": "1.2.13",
 		"@solidjs/meta": "0.29.4",
-		"@solidjs/router": "0.14.3",
+		"@solidjs/router": "0.15.3",
 		"solid-js": "1.9.3",
 		"solid-toast": "0.5.0"
 	}
