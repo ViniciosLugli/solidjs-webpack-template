@@ -49,7 +49,7 @@
 		"webpack-dev-server": "5.1.0"
 	},
 	"dependencies": {
-		"@ark-ui/solid": "3.10.0",
+		"@ark-ui/solid": "3.13.0",
 		"@felte/solid": "1.2.13",
 		"@solidjs/meta": "0.29.4",
 		"@solidjs/router": "0.14.3",
