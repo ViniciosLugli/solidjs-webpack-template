@@ -50,7 +50,7 @@
 	},
 	"dependencies": {
 		"@ark-ui/solid": "3.13.0",
-		"@felte/solid": "1.2.13",
+		"@felte/solid": "1.2.14",
 		"@solidjs/meta": "0.29.4",
 		"@solidjs/router": "0.15.3",
 		"solid-js": "1.9.3",
