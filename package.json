@@ -46,7 +46,7 @@
 		"unplugin-tailwindcss-mangle": "3.0.1",
 		"webpack": "5.98.0",
 		"webpack-cli": "5.1.4",
-		"webpack-dev-server": "5.1.0"
+		"webpack-dev-server": "5.2.0"
 	},
 	"dependencies": {
 		"@ark-ui/solid": "3.13.0",
