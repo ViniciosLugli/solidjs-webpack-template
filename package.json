@@ -21,7 +21,7 @@
 		"@tailwindcss/forms": "0.5.10",
 		"@tailwindcss/typography": "0.5.16",
 		"autoprefixer": "10.4.21",
-		"babel-loader": "9.2.1",
+		"babel-loader": "10.0.0",
 		"babel-preset-solid": "1.9.5",
 		"before-build-webpack": "0.2.15",
 		"copy-webpack-plugin": "12.0.2",
