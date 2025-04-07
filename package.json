@@ -36,7 +36,7 @@
 		"postcss-preset-env": "10.1.5",
 		"sass": "1.86.3",
 		"sass-loader": "16.0.5",
-		"sharp": "0.33.5",
+		"sharp": "0.34.0",
 		"svgo": "3.3.2",
 		"tailwindcss": "4.0.17",
 		"tailwindcss-patch": "^7.0.0",
