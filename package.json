@@ -53,7 +53,7 @@
 		"@felte/solid": "1.2.14",
 		"@solidjs/meta": "0.29.4",
 		"@solidjs/router": "0.15.3",
-		"solid-js": "1.9.5",
+		"solid-js": "1.9.6",
 		"solid-toast": "0.5.0"
 	}
 }
