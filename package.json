@@ -38,7 +38,7 @@
 		"sass-loader": "16.0.5",
 		"sharp": "0.34.2",
 		"svgo": "3.3.2",
-		"tailwindcss": "4.1.8",
+		"tailwindcss": "4.1.10",
 		"tailwindcss-patch": "^7.0.0",
 		"terser-webpack-plugin": "5.3.14",
 		"tsconfig-paths-webpack-plugin": "4.2.0",
