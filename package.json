@@ -10,10 +10,10 @@
 		"build": "webpack --config webpack.config.js --mode=production"
 	},
 	"devDependencies": {
-		"@babel/core": "7.27.7",
+		"@babel/core": "7.28.0",
 		"@babel/plugin-transform-class-properties": "7.27.1",
-		"@babel/plugin-transform-object-rest-spread": "7.27.7",
-		"@babel/preset-env": "7.27.2",
+		"@babel/plugin-transform-object-rest-spread": "7.28.0",
+		"@babel/preset-env": "7.28.0",
 		"@babel/preset-typescript": "7.27.1",
 		"@swc/html": "1.12.9",
 		"@tailwindcss/aspect-ratio": "0.4.2",
