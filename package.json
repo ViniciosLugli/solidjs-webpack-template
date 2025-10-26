@@ -39,7 +39,7 @@
 		"sharp": "0.34.4",
 		"svgo": "4.0.0",
 		"tailwindcss": "4.1.16",
-		"tailwindcss-patch": "^7.0.0",
+		"tailwindcss-patch": "^8.0.0",
 		"terser-webpack-plugin": "5.3.14",
 		"tsconfig-paths-webpack-plugin": "4.2.0",
 		"typescript": "5.9.3",
