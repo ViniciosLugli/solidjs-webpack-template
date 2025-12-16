@@ -34,7 +34,7 @@
 		"postcss": "^8.4.45",
 		"postcss-loader": "8.2.0",
 		"postcss-preset-env": "10.5.0",
-		"sass": "1.96.0",
+		"sass": "1.97.0",
 		"sass-loader": "16.0.6",
 		"sharp": "0.34.5",
 		"svgo": "4.0.0",
