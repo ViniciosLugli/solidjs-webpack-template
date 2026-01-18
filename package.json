@@ -30,7 +30,7 @@
 		"html-minimizer-webpack-plugin": "5.0.4",
 		"html-webpack-plugin": "5.6.6",
 		"image-minimizer-webpack-plugin": "4.1.4",
-		"mini-css-extract-plugin": "2.9.4",
+		"mini-css-extract-plugin": "2.10.0",
 		"postcss": "^8.4.45",
 		"postcss-loader": "8.2.0",
 		"postcss-preset-env": "11.1.1",
