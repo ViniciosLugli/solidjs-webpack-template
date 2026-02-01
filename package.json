@@ -20,7 +20,7 @@
 		"@tailwindcss/container-queries": "0.1.1",
 		"@tailwindcss/forms": "0.5.11",
 		"@tailwindcss/typography": "0.5.19",
-		"autoprefixer": "10.4.23",
+		"autoprefixer": "10.4.24",
 		"babel-loader": "10.0.0",
 		"babel-preset-solid": "1.9.10",
 		"before-build-webpack": "0.2.15",
